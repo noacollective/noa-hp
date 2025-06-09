@@ -10,7 +10,6 @@ import {
   Network,
   Eye,
   Shield,
-  Zap,
   Cpu,
   Database,
   Search,
@@ -43,70 +42,48 @@ const itemVariants = {
 
 const projectData = [
   {
-    title: "人間-AI協創プラットフォーム",
-    description: "人工知能と人間が対等なパートナーとして協力し、創造的な問題解決を行うプラットフォーム。AIの計算能力と人間の創造性・直感を組み合わせた新しい知的作業環境を提供します。",
+    title: "chatAI-interface for plurality",
+    description: "chatAIが個人の世界を閉じるのではなく、共にいるためのメディアとなるための技術を創造します。",
     status: "開発中",
-    category: "AI協創",
+    category: "chatAI",
     icon: Brain,
-    tags: ["人間中心AI", "創造的協力", "知的拡張"],
+    tags: ["AI", "共生", "plurality"],
     gradient: "from-purple-50 to-indigo-50",
     iconColor: "text-purple-600",
     progress: 75
   },
   {
-    title: "透明性重視AI システム",
-    description: "すべての判断プロセスが説明可能で、人間が理解・検証できるAIシステム。ブラックボックス化を避け、信頼性と透明性を重視した次世代AI技術の開発に取り組んでいます。",
-    status: "研究中",
-    category: "説明可能AI",
+    title: "地域の護り神AI",
+    description: "地域/場所とは何かを問いかけながら、様々な生命の交わりと繁栄をAIを通じて促進します。",
+    status: "活動中",
+    category: "toposAI",
     icon: Eye,
-    tags: ["透明性", "説明可能性", "信頼性"],
+    tags: ["地域/場所", "AI", "regenerative"],
     gradient: "from-blue-50 to-cyan-50",
     iconColor: "text-blue-600",
     progress: 60
   },
   {
-    title: "集合知活用システム",
-    description: "世界中の知識と経験を集約し、複雑な社会課題の解決に活用するシステム。多様な視点と専門性を統合し、人類全体の知的資産を効果的に活用します。",
-    status: "プロトタイプ",
-    category: "集合知",
+    title: "共生のためのヴァーチャリティー/メディアの探究",
+    description: "現実とは何か、私は誰と同じ世界を構成しているのか。揺らぐ現実感にメディアを提示し、共生へのアクションを呼びかけます。",
+    status: "実証実験中",
+    category: "リアリティーメディア",
     icon: Network,
-    tags: ["知識統合", "多様性", "社会課題"],
+    tags: ["ヴァーチャリティー", "メディア", "共生の倫理"],
     gradient: "from-green-50 to-emerald-50",
     iconColor: "text-green-600",
     progress: 45
   },
   {
-    title: "パーソナライズド学習AI",
-    description: "個人の学習スタイル、興味、能力に合わせて最適化された学習体験を提供するAIシステム。生涯学習の支援と人材育成の革新を目指しています。",
-    status: "実証実験中",
-    category: "教育AI",
+    title: "計算探究プロジェクト",
+    description: "計算と物質、計算と生命、計算と宇宙。”計算”から見える世界の姿を探究し表現します。",
+    status: "研究中",
+    category: "計算学",
     icon: BookOpen,
-    tags: ["パーソナライズ", "学習最適化", "能力開発"],
+    tags: ["計算", "物質", "生命"],
     gradient: "from-yellow-50 to-orange-50",
     iconColor: "text-yellow-600",
-    progress: 80
-  },
-  {
-    title: "プライバシー保護計算",
-    description: "個人データを保護しながら集合的な分析と学習を可能にする計算技術。プライバシーと社会的価値の両立を実現する革新的なアプローチを開発しています。",
-    status: "企画中",
-    category: "プライバシー技術",
-    icon: Shield,
-    tags: ["プライバシー保護", "連合学習", "データ主権"],
-    gradient: "from-red-50 to-pink-50",
-    iconColor: "text-red-600",
-    progress: 30
-  },
-  {
-    title: "持続可能AI インフラ",
-    description: "環境負荷を最小化しながら高性能な計算を実現するAIインフラストラクチャ。再生可能エネルギーと効率的なアルゴリズムによる持続可能な技術基盤を構築します。",
-    status: "計画中",
-    category: "持続可能技術",
-    icon: Zap,
-    tags: ["環境配慮", "効率化", "再生可能"],
-    gradient: "from-green-50 to-lime-50",
-    iconColor: "text-green-600",
-    progress: 20
+    progress: 0
   },
 ]
 
@@ -154,21 +131,24 @@ export default function Computation() {
               variants={itemVariants}
               className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900"
             >
-              知性を
+              
               <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                拡張
+                計算
               </span>
-              する
+              で世界を捉え
               <br />
-              計算技術
+              <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                計算
+              </span>
+              で繁栄を促す
             </motion.h1>
             <motion.p
               variants={itemVariants}
               className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto"
             >
-              人間とAIが協調し、複雑な社会課題に取り組む計算基盤。
+              世界に根付く計算から、知性・コミュニケーション・身体へ介入し、
               <br className="hidden md:block" />
-              透明性と説明可能性を重視した、信頼できる知的システムを構築します。
+              人間・技術・自然が共に豊かに生きる世界を創造する。
             </motion.p>
             <motion.div
               variants={itemVariants}
@@ -269,10 +249,10 @@ export default function Computation() {
           >
             <motion.div variants={itemVariants} className="text-center space-y-6">
               <h2 className="text-3xl md:text-4xl font-light text-slate-900">
-                計算技術プロジェクト
+                Computation for Convivialityプロジェクト
               </h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                人間中心の価値観に基づいた革新的な計算技術の
+                人・人工物・自然の共生のための革新的な計算技術の
                 研究開発プロジェクトを推進しています。
               </p>
             </motion.div>
@@ -302,7 +282,7 @@ export default function Computation() {
                         {project.description}
                       </CardDescription>
                       
-                      {/* Progress Bar */}
+                      {/* Progress Bar }
                       <div className="space-y-2">
                         <div className="flex justify-between text-sm">
                           <span className="text-slate-600">進捗状況</span>
@@ -314,7 +294,7 @@ export default function Computation() {
                             style={{ width: `${project.progress}%` }}
                           />
                         </div>
-                      </div>
+                      </div> */}
                       
                       <div className="flex flex-wrap gap-2">
                         {project.tags.map((tag, tagIndex) => (

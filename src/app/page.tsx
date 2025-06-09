@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -46,21 +47,28 @@ export default function Home() {
               variants={itemVariants}
               className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900"
             >
-              未来への
-              <span className="bg-gradient-to-r from-slate-900 via-blue-800 to-blue-600 bg-clip-text text-transparent">
-                調和
+              <span className="whitespace-nowrap">
+              生きとし生ける
+            
+                <span className="bg-gradient-to-r from-slate-900 via-blue-800 to-blue-600 bg-clip-text text-transparent">
+                わたしたち
+                </span>
+              の
               </span>
-              を
               <br />
-              共に創造する
+              命のテクノロジー
+              <br />
+              <span className="mt-2 text-base md:text-lg lg:text-xl text-slate-500 italic tracking-wide">
+    　　　　　　  computation for conviviality of all livings
+  　　　　　　　</span>
             </motion.h1>
             <motion.p
               variants={itemVariants}
               className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto"
             >
-              人間・テクノロジー・自然が共生する社会を目指し、
+              人間・テクノロジー・自然の輝く共生を目指し、
               <br className="hidden md:block" />
-              遊び・経済・計算技術の領域で新しい可能性を探求します
+              遊び・経済・計算技術の連環から新たな進化を探求します
             </motion.p>
             <motion.div
               variants={itemVariants}
@@ -97,10 +105,52 @@ export default function Home() {
                 想像してみてください
               </h2>
               <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                テクノロジーが人間の創造性を拡張し、自然との調和を深める世界。
-                そこでは、仕事と遊びの境界が溶け、
-                誰もが自分らしく生きられる社会が実現されています。
+                世界に融けたテクノロジーが、人の創造をつなぎ、命の美しさを輝かせる世界。
+                そこでは、心と体、仕事と遊び、人間と自然の境界が溶け、
+                いそぎ争うのでなく、共に生き共に楽しむ社会が実現されています。
               </p>
+            </motion.div>
+
+            {/* Future Vision Image Section */}
+            <motion.div
+              variants={itemVariants}
+              className="relative max-w-6xl mx-auto"
+            >
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                {/* Main Image */}
+                <Image
+                  src="/future-living.jpg"
+                  alt="未来の地域の姿 - 山川と田園に囲まれ、人、ロボット、精霊たちが共に遊び、テクノロジーが美しい光でつながる世界"
+                  width={1200}
+                  height={500}
+                  className="w-full h-96 md:h-[500px] object-cover"
+                  priority
+                />
+                
+                {/* Overlay with text content */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
+                  <div className="absolute bottom-0 left-0 right-0 p-8 text-center">
+                    <motion.div
+                      variants={itemVariants}
+                      className="space-y-4"
+                    >
+                      <h3 className="text-2xl md:text-3xl font-light text-white leading-relaxed drop-shadow-lg">
+                        山川と田園に抱かれて
+                      </h3>
+                      <p className="text-lg text-white/90 leading-relaxed italic drop-shadow-md max-w-2xl mx-auto">
+                        人も、愛らしきロボットも、見えない精霊たちも
+                        <br className="hidden md:block" />
+                        それぞれの命を輝かせ、共に遊び、共に学ぶ
+                      </p>
+                      <p className="text-base text-white/80 leading-relaxed drop-shadow-md max-w-2xl mx-auto">
+                        テクノロジーは美しい空気のように
+                        <br className="hidden md:block" />
+                        すべての光を優しくつなぎ、調和を奏でています
+                      </p>
+                    </motion.div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
             
             <motion.div
@@ -112,27 +162,27 @@ export default function Home() {
                   <div className="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
                     <TreePine className="h-8 w-8 text-green-600" />
                   </div>
-                  <h3 className="font-medium text-slate-800">自然との共生</h3>
+                  <h3 className="font-medium text-slate-800">コンヴィヴィアリティ</h3>
                   <p className="text-sm text-slate-600">
-                    テクノロジーが自然を守り、豊かな生態系の中で暮らす
+                    人同士が、そしてロボット、自然が、皆で生き生きと生きる世界へ
                   </p>
                 </div>
                 <div className="text-center space-y-3">
                   <div className="mx-auto w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
                     <Heart className="h-8 w-8 text-purple-600" />
                   </div>
-                  <h3 className="font-medium text-slate-800">人間中心の設計</h3>
+                  <h3 className="font-medium text-slate-800">競争から楽しい調和へ</h3>
                   <p className="text-sm text-slate-600">
-                    すべての人が尊重され、個性を活かせる社会の実現
+                    個々が争い孤立するのではなく、共に生き喜びを分かち合える世界へ
                   </p>
                 </div>
                 <div className="text-center space-y-3">
                   <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
                     <Sparkles className="h-8 w-8 text-blue-600" />
                   </div>
-                  <h3 className="font-medium text-slate-800">創造的な暮らし</h3>
+                  <h3 className="font-medium text-slate-800">遊びとしての創造</h3>
                   <p className="text-sm text-slate-600">
-                    遊びと学びが融合した、喜びに満ちた日常
+                    遊ぶように世界を知り、遊ぶように何かを創造する世界へ
                   </p>
                 </div>
               </div>
@@ -160,77 +210,129 @@ export default function Home() {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <motion.div variants={itemVariants}>
-                <Link href="/play" className="group">
-                  <Card className="h-full transition-all duration-300 hover:shadow-lg hover:shadow-blue-100 hover:-translate-y-1 border-0 bg-gradient-to-br from-blue-50 to-white">
-                    <CardHeader className="text-center space-y-4">
-                      <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Lightbulb className="h-8 w-8 text-blue-600" />
-                      </div>
-                      <CardTitle className="text-xl">遊び事業</CardTitle>
-                    </CardHeader>
-                    <CardContent className="text-center space-y-4">
-                      <CardDescription className="text-base leading-relaxed">
-                        創造性と喜びを中心とした新しい体験の設計。
-                        遊びの力で社会の課題を解決し、
-                        人々の可能性を拡張します。
-                      </CardDescription>
-                      <Button variant="ghost" className="group-hover:bg-blue-100">
-                        詳しく見る
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                    </CardContent>
-                  </Card>
-                </Link>
-              </motion.div>
+            {/* Elegant Overlapping Circles Layout */}
+            <div className="relative max-w-5xl mx-auto">
+              {/* Subtle connecting lines */}
+              <div className="absolute inset-0 opacity-20">
+                <svg className="w-full h-full" viewBox="0 0 800 600">
+                  <path
+                    d="M400 120 L200 380 L600 380 Z"
+                    stroke="url(#triangleGradient)"
+                    strokeWidth="2"
+                    fill="none"
+                    strokeDasharray="5,5"
+                  />
+                  <defs>
+                    <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#3b82f6" />
+                      <stop offset="50%" stopColor="#10b981" />
+                      <stop offset="100%" stopColor="#8b5cf6" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
 
-              <motion.div variants={itemVariants}>
-                <Link href="/economy" className="group">
-                  <Card className="h-full transition-all duration-300 hover:shadow-lg hover:shadow-green-100 hover:-translate-y-1 border-0 bg-gradient-to-br from-green-50 to-white">
-                    <CardHeader className="text-center space-y-4">
-                      <div className="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Users className="h-8 w-8 text-green-600" />
+              <motion.div variants={itemVariants} className="relative h-[580px] md:h-[680px]">
+                
+                {/* Play Circle - Top Center */}
+                <motion.div 
+                  variants={itemVariants}
+                  className="absolute top-0 left-1/2 transform -translate-x-1/2 z-30"
+                >
+                  <Link href="/play" className="group block">
+                    <div className="relative w-72 h-72 md:w-96 md:h-96">
+                      {/* Outer glow ring */}
+                      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/20 to-blue-600/20 blur-xl group-hover:from-blue-500/30 group-hover:to-blue-600/30 transition-all duration-300"></div>
+                      
+                      {/* Main circle */}
+                      <div className="relative w-full h-full rounded-full bg-gradient-to-br from-white via-blue-50 to-blue-100 border-2 border-blue-200/50 shadow-xl hover:shadow-2xl hover:shadow-blue-200/50 transition-all duration-500 group-hover:scale-105 flex flex-col items-center justify-center text-center p-8">
+                        <div className="mb-6 relative">
+                          <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                            <Lightbulb className="h-10 w-10 text-white" />
+                          </div>
+                          <div className="absolute -inset-2 bg-gradient-to-br from-blue-400/20 to-blue-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 className="text-xl md:text-2xl font-semibold text-slate-800 mb-4 group-hover:text-blue-800 transition-colors">未来の遊び事業</h3>
+                        <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-6 max-w-48">
+                          リアルとバーチャルが融けた世界で、体、美、知、技と戯れ、遊びの力で世界に壮大な物語を描きます。
+                        </p>
+                        <div className="bg-blue-500/10 rounded-full px-4 py-2 group-hover:bg-blue-500/20 transition-colors">
+                          <span className="text-blue-700 font-medium text-sm flex items-center">
+                            詳しく見る
+                            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                          </span>
+                        </div>
                       </div>
-                      <CardTitle className="text-xl">経済事業</CardTitle>
-                    </CardHeader>
-                    <CardContent className="text-center space-y-4">
-                      <CardDescription className="text-base leading-relaxed">
-                        持続可能で包括的な経済システムの構築。
-                        共創と相互支援を基盤とした、
-                        新しい価値交換の仕組みを創造します。
-                      </CardDescription>
-                      <Button variant="ghost" className="group-hover:bg-green-100">
-                        詳しく見る
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                    </CardContent>
-                  </Card>
-                </Link>
-              </motion.div>
+                    </div>
+                  </Link>
+                </motion.div>
 
-              <motion.div variants={itemVariants}>
-                <Link href="/computation" className="group">
-                  <Card className="h-full transition-all duration-300 hover:shadow-lg hover:shadow-purple-100 hover:-translate-y-1 border-0 bg-gradient-to-br from-purple-50 to-white">
-                    <CardHeader className="text-center space-y-4">
-                      <div className="mx-auto w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <CircuitBoard className="h-8 w-8 text-purple-600" />
+                {/* Economy Circle - Bottom Left */}
+                <motion.div 
+                  variants={itemVariants}
+                  className="absolute bottom-0 left-8 md:left-16 z-20"
+                >
+                  <Link href="/economy" className="group block">
+                    <div className="relative w-72 h-72 md:w-96 md:h-96">
+                      {/* Outer glow ring */}
+                      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-green-500/20 to-green-600/20 blur-xl group-hover:from-green-500/30 group-hover:to-green-600/30 transition-all duration-300"></div>
+                      
+                      {/* Main circle */}
+                      <div className="relative w-full h-full rounded-full bg-gradient-to-br from-white via-green-50 to-green-100 border-2 border-green-200/50 shadow-xl hover:shadow-2xl hover:shadow-green-200/50 transition-all duration-500 group-hover:scale-105 flex flex-col items-center justify-center text-center p-8">
+                        <div className="mb-6 relative">
+                          <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                            <Users className="h-10 w-10 text-white" />
+                          </div>
+                          <div className="absolute -inset-2 bg-gradient-to-br from-green-400/20 to-green-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 className="text-xl md:text-2xl font-semibold text-slate-800 mb-4 group-hover:text-green-800 transition-colors">生命の経済事業</h3>
+                        <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-6 max-w-48">
+                          人間同士の競争、孤立、分断を促すシステムから、生命全体の共助、調和、喜びを促すシステムへ。
+                        </p>
+                        <div className="bg-green-500/10 rounded-full px-4 py-2 group-hover:bg-green-500/20 transition-colors">
+                          <span className="text-green-700 font-medium text-sm flex items-center">
+                            詳しく見る
+                            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                          </span>
+                        </div>
                       </div>
-                      <CardTitle className="text-xl">計算技術事業</CardTitle>
-                    </CardHeader>
-                    <CardContent className="text-center space-y-4">
-                      <CardDescription className="text-base leading-relaxed">
-                        人間の知性を拡張する計算技術の開発。
-                        AIと人間が協調し、
-                        複雑な社会課題に取り組む基盤を構築します。
-                      </CardDescription>
-                      <Button variant="ghost" className="group-hover:bg-purple-100">
-                        詳しく見る
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                    </CardContent>
-                  </Card>
-                </Link>
+                    </div>
+                  </Link>
+                </motion.div>
+
+                {/* Computation Circle - Bottom Right */}
+                <motion.div 
+                  variants={itemVariants}
+                  className="absolute bottom-0 right-8 md:right-16 z-10"
+                >
+                  <Link href="/computation" className="group block">
+                    <div className="relative w-72 h-72 md:w-96 md:h-96">
+                      {/* Outer glow ring */}
+                      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500/20 to-purple-600/20 blur-xl group-hover:from-purple-500/30 group-hover:to-purple-600/30 transition-all duration-300"></div>
+                      
+                      {/* Main circle */}
+                      <div className="relative w-full h-full rounded-full bg-gradient-to-br from-white via-purple-50 to-purple-100 border-2 border-purple-200/50 shadow-xl hover:shadow-2xl hover:shadow-purple-200/50 transition-all duration-500 group-hover:scale-105 flex flex-col items-center justify-center text-center p-8">
+                        <div className="mb-6 relative">
+                          <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                            <CircuitBoard className="h-10 w-10 text-white" />
+                          </div>
+                          <div className="absolute -inset-2 bg-gradient-to-br from-purple-400/20 to-purple-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 className="text-xl md:text-2xl font-semibold text-slate-800 mb-4 group-hover:text-purple-800 transition-colors">計算探究事業</h3>
+                        <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-6 max-w-48">
+                          皆で生き、皆で楽しむための生命と技芸の姿を、計算で探究し、プロダクト、知、アートで表現します。
+                        </p>
+                        <div className="bg-purple-500/10 rounded-full px-4 py-2 group-hover:bg-purple-500/20 transition-colors">
+                          <span className="text-purple-700 font-medium text-sm flex items-center">
+                            詳しく見る
+                            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </motion.div>
+
               </motion.div>
             </div>
           </motion.div>
@@ -259,19 +361,9 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  date: "2024.12.15",
-                  title: "新しい共創プラットフォームがスタート",
-                  excerpt: "技術者と市民が協力して社会課題に取り組む新しい仕組みを開始しました。",
-                },
-                {
-                  date: "2024.11.28",
-                  title: "持続可能な経済モデルの実証実験を開始",
-                  excerpt: "地域コミュニティと連携した新しい価値交換システムのテストを開始。",
-                },
-                {
-                  date: "2024.11.10",
-                  title: "AIと人間の協創ワークショップを開催",
-                  excerpt: "創造的な問題解決における人工知能と人間の協力について探求しました。",
+                  date: "2025.06.10",
+                  title: "webページを公開",
+                  excerpt: "noaの活動内容を公開しました。",
                 },
               ].map((news, index) => (
                 <motion.div key={index} variants={itemVariants}>

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Zen_Old_Mincho } from "next/font/google";
+import { Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 
-const zenOldMincho = Zen_Old_Mincho({
+const notoSerifJP = Noto_Serif_JP({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "900"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${zenOldMincho.variable} font-sans antialiased`}>
+      <body className={`${notoSerifJP.variable} font-sans antialiased`}>
         <div className="min-h-screen flex flex-col">
           <Navigation />
           <main className="flex-1 pt-16">

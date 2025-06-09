@@ -56,12 +56,13 @@ export default function Contact() {
               variants={itemVariants}
               className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900"
             >
-              お
+              共に
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                つながり
+                美しい未来
               </span>
+              を
               <br />
-              ください
+              創造しよう
             </motion.h1>
             <motion.p
               variants={itemVariants}
@@ -241,11 +242,11 @@ export default function Contact() {
                     <div className="space-y-2">
                       <div className="flex items-center gap-2 text-sm">
                         <Mail className="h-4 w-4 text-slate-500" />
-                        <span className="text-slate-600">contact@noah-p.org</span>
+                        <span className="text-slate-600">noasophic@gmail.com</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Phone className="h-4 w-4 text-slate-500" />
-                        <span className="text-slate-600">03-XXXX-XXXX</span>
+                        <span className="text-slate-600">080-6811-8129</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Clock className="h-4 w-4 text-slate-500" />
@@ -265,9 +266,8 @@ export default function Contact() {
                   <CardContent>
                     <div className="space-y-2">
                       <p className="text-sm text-slate-600">
-                        〒100-0001<br />
-                        東京都千代田区千代田1-1<br />
-                        ○○ビル 5F
+                        〒979-2124<br />
+                        福島県南相馬市小高区本町1-81
                       </p>
                       <p className="text-xs text-slate-500">
                         ※ 訪問前にはお電話またはメールでご連絡ください
@@ -284,15 +284,15 @@ export default function Contact() {
                     <div className="space-y-3">
                       <a href="#" className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600 transition-colors">
                         <div className="w-4 h-4 bg-blue-500 rounded"></div>
-                        Twitter: @noa_official
+                        Twitter: -
                       </a>
                       <a href="#" className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600 transition-colors">
                         <div className="w-4 h-4 bg-blue-700 rounded"></div>
-                        LinkedIn: noa
+                        LinkedIn: -
                       </a>
                       <a href="#" className="flex items-center gap-2 text-sm text-slate-600 hover:text-black transition-colors">
                         <div className="w-4 h-4 bg-black rounded"></div>
-                        GitHub: noa
+                        GitHub: -
                       </a>
                     </div>
                   </CardContent>

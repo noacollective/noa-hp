@@ -9,12 +9,8 @@ import {
   Recycle, 
   Users, 
   Handshake, 
-  TreePine, 
-  Network,
-  TrendingUp,
-  Heart,
-  Globe,
-  Leaf
+  TreePine,
+  Heart
 } from "lucide-react"
 
 const containerVariants = {
@@ -42,70 +38,59 @@ const itemVariants = {
 
 const projectData = [
   {
-    title: "相互支援経済プラットフォーム",
-    description: "地域コミュニティ内でスキル、時間、物品を交換する新しい経済システム。お金だけでない価値の循環により、誰もが貢献し、恩恵を受けられる持続可能な経済を実現します。",
-    status: "運用中",
-    category: "地域経済",
+    title: "電子地域通貨の実証実験",
+    description: "地域内での価値循環を促進する電子通貨システムの実証実験。地域の商店、農家、住民が参加し、地域経済の自立と活性化を目指します。",
+    status: "企画中",
+    category: "地域電子通貨",
     icon: Handshake,
-    tags: ["スキル交換", "時間銀行", "コミュニティ"],
+    tags: ["地域活性化", "電子決済", "循環経済"],
     gradient: "from-green-50 to-emerald-50",
     iconColor: "text-green-600",
     metrics: { users: "2,400+", exchanges: "8,500+", communities: "15" }
   },
   {
-    title: "循環型価値創造システム",
-    description: "廃棄物を資源として再活用し、環境負荷を削減しながら新しい価値を創造するシステム。地域の循環経済を促進し、持続可能な生産・消費モデルを構築します。",
-    status: "実証実験中",
-    category: "循環経済",
-    icon: Recycle,
-    tags: ["アップサイクル", "ゼロウェイスト", "リソース最適化"],
-    gradient: "from-blue-50 to-cyan-50",
-    iconColor: "text-blue-600",
-    metrics: { reduction: "65%", jobs: "120+", partners: "45" }
-  },
-  {
-    title: "協同組合型デジタル経済",
-    description: "参加者全員が所有者となるデジタル協同組合プラットフォーム。利益を公平に分配し、意思決定に全員が参加できる民主的な経済システムを提供します。",
-    status: "開発中",
-    category: "協同経済",
+    title: "plural value economy",
+    description: "ある財に与えられる価値は人によって、そして文脈によって変わります。電子通貨によって開かれる可能性の中に模索します。",
+    status: "企画中",
+    category: "多価値経済",
     icon: Users,
-    tags: ["民主的運営", "利益分配", "集合所有"],
+    tags: ["多様性", "価値創造", "文脈経済"],
     gradient: "from-purple-50 to-indigo-50",
     iconColor: "text-purple-600",
     metrics: { members: "850+", revenue: "分散", decisions: "投票制" }
   },
   {
-    title: "感謝経済ネットワーク",
-    description: "感謝の気持ちを可視化し、善意の行動を社会全体で評価・循環させる経済システム。金銭的価値だけでない、人間関係と幸福度を重視した新しい価値観を醸成します。",
-    status: "パイロット",
-    category: "感謝経済",
+    title: "コモンズ循環経済の構築",
+    description: "共有資源を基盤とした持続可能な経済システムの構築。食料生産、住居、知識、技術を地域で共有し、相互支援による豊かなコミュニティを実現します。",
+    status: "企画中",
+    category: "コモンズ",
     icon: Heart,
-    tags: ["感謝可視化", "善意循環", "幸福度"],
+    tags: ["食・住の共助", "共有資源", "持続可能性"],
     gradient: "from-pink-50 to-rose-50",
     iconColor: "text-pink-600",
     metrics: { gratitude: "25,000+", happiness: "+32%", connections: "強化" }
   },
   {
-    title: "知識共有経済プラットフォーム",
-    description: "知識とスキルを共有し、集合知を活用した問題解決を促進するプラットフォーム。教育、研究、イノベーションの新しい形を創造し、知的資本の民主化を図ります。",
-    status: "企画中",
-    category: "知識経済",
-    icon: Network,
-    tags: ["集合知", "知識共有", "教育革新"],
-    gradient: "from-yellow-50 to-amber-50",
-    iconColor: "text-yellow-600",
-    metrics: { knowledge: "共有", access: "平等", innovation: "加速" }
+    title: "blockchain,AI,ARを通じた新たな計算経済の研究調査",
+    description: "ブロックチェーン、AI、ARなどの先端計算技術を活用した新しい経済システムの可能性を研究。分散型自律組織（DAO）や仮想現実経済の実現を探求します。",
+    status: "計画中",
+    category: "計算拡張経済",
+    icon: Handshake,
+    tags: ["ブロックチェーン", "AI経済", "AR技術"],
+    gradient: "from-green-50 to-emerald-50",
+    iconColor: "text-green-600",
+    metrics: { users: "2,400+", exchanges: "8,500+", communities: "15" }
   },
   {
-    title: "再生可能エネルギー経済",
-    description: "地域の再生可能エネルギーを住民が共同所有し、エネルギーの地産地消と利益の地域還元を実現するシステム。エネルギー民主主義の実践モデルを構築します。",
+    title: "生命の網としての経済の研究調査",
+    description: "人の生活に関わり広がる生態系の循環と繁栄をどのように経済として扱えるかを考えます。ReFiやRegenerativeDesignを通じた実践も行います。",
     status: "計画中",
-    category: "エネルギー経済",
-    icon: Leaf,
-    tags: ["再生可能", "共同所有", "地産地消"],
-    gradient: "from-green-50 to-lime-50",
-    iconColor: "text-green-600",
-    metrics: { renewable: "100%", ownership: "共同", benefits: "地域還元" }
+    category: "生命の経済",
+    icon: Recycle,
+    tags: ["生命の網としての経済", "ReFi", "RegenerativeDesign"],
+    gradient: "from-blue-50 to-cyan-50",
+    iconColor: "text-blue-600",
+    metrics: { reduction: "65%", jobs: "120+", partners: "45" }
   },
 ]
 
@@ -153,20 +138,21 @@ export default function Economy() {
               variants={itemVariants}
               className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900"
             >
-              共創する
+              計算技術を通じた
+              <br />
               <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-                経済
+                多様な貨幣経済
               </span>
               <br />
-              の実現
+              の創作と実験
             </motion.h1>
             <motion.p
               variants={itemVariants}
               className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto"
             >
-              競争ではなく協力を基盤とした持続可能な経済システム。
+              すべての人/生命の価値を生み出し、循環させ、繁栄を促す、
               <br className="hidden md:block" />
-              すべての人が価値を創造し、恩恵を受けられる新しい経済の形を築きます。
+              多様な貨幣、あるいは貨幣のない経済のあり方を計算と対話から実験する。
             </motion.p>
             <motion.div
               variants={itemVariants}
@@ -174,15 +160,15 @@ export default function Economy() {
             >
               <div className="flex items-center gap-2">
                 <Coins className="h-5 w-5 text-green-500" />
-                <span className="text-sm font-medium text-slate-700">価値の再定義</span>
+                <span className="text-sm font-medium text-slate-700">計算による貨幣の超克</span>
               </div>
               <div className="flex items-center gap-2">
                 <Users className="h-5 w-5 text-blue-500" />
-                <span className="text-sm font-medium text-slate-700">共同所有</span>
+                <span className="text-sm font-medium text-slate-700">多様な価値の循環</span>
               </div>
               <div className="flex items-center gap-2">
                 <TreePine className="h-5 w-5 text-green-500" />
-                <span className="text-sm font-medium text-slate-700">持続可能性</span>
+                <span className="text-sm font-medium text-slate-700">生命の繁栄</span>
               </div>
             </motion.div>
           </motion.div>
@@ -201,11 +187,11 @@ export default function Economy() {
           >
             <motion.div variants={itemVariants} className="text-center space-y-6">
               <h2 className="text-3xl md:text-4xl font-light text-slate-900">
-                新しい経済パラダイム
+                Plural intelligent economy
               </h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                従来の市場経済の限界を超え、人間と自然の幸福を最優先とする
-                新しい経済システムの構築を目指しています。
+                貨幣のあり方、価値のあり方、交換のあり方が多様にありうる生命の共生のあり方を、
+                blockchainを通じた行為/価値の記録と、AIを通じた対話/計算の高度化などを通じ拡張する。
               </p>
             </motion.div>
 
@@ -270,8 +256,7 @@ export default function Economy() {
                 経済革新プロジェクト
               </h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                持続可能で包括的な経済システムの実現に向けた
-                革新的なプロジェクトを展開しています。
+                均質な数値から、豊かな情報網、そして生命の網へと進化する経済の形を、計算技術を通じて創造する。
               </p>
             </motion.div>
 
@@ -300,7 +285,7 @@ export default function Economy() {
                         {project.description}
                       </CardDescription>
                       
-                      {/* Metrics */}
+                      {/* Metrics }
                       <div className="grid grid-cols-3 gap-4 p-4 bg-white/50 rounded-lg">
                         {Object.entries(project.metrics).map(([key, value], metricIndex) => (
                           <div key={metricIndex} className="text-center">
@@ -312,7 +297,7 @@ export default function Economy() {
                             </div>
                           </div>
                         ))}
-                      </div>
+                      </div> */}
                       
                       <div className="flex flex-wrap gap-2">
                         {project.tags.map((tag, tagIndex) => (
@@ -336,7 +321,7 @@ export default function Economy() {
         </div>
       </section>
 
-      {/* Impact Section */}
+      {/* Impact Section }
       <section className="py-20 bg-gradient-to-r from-green-50 via-white to-blue-50">
         <div className="container mx-auto px-4">
           <motion.div
@@ -407,7 +392,7 @@ export default function Economy() {
             </motion.div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-r from-emerald-100 via-white to-blue-100">

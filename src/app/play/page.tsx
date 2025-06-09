@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Gamepad, Palette, Music, Users, Sparkles, Heart, Star, Wand2 } from "lucide-react"
+import { Gamepad, Palette, Sparkles, Heart, Star, Wand2 } from "lucide-react"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -30,30 +30,30 @@ const itemVariants = {
 
 const projectData = [
   {
-    title: "創造性拡張プラットフォーム",
-    description: "AI と人間の創造性を融合させ、新しい芸術表現の可能性を探求するプラットフォーム。音楽、絵画、文学など多様な分野で、誰もがアーティストになれる環境を提供します。",
-    status: "開発中",
-    category: "創造支援",
+    title: "空神楽プロジェクト",
+    description: "夜空に踊る光の舞いを、多様な人の交錯から生み出し、過去と未来、人・技術・自然の交わる新たな花火文化を創造します。",
+    status: "活動中",
+    category: "祭り",
     icon: Palette,
-    tags: ["AI協創", "アート", "表現"],
+    tags: ["ロボットの舞い", "祭り", "スペクタクル"],
     gradient: "from-pink-50 to-purple-50",
     iconColor: "text-pink-600",
     badgeColor: "bg-pink-100 text-pink-700",
   },
   {
-    title: "共感ゲーミング体験",
-    description: "競争ではなく協力と共感を中心としたゲーム体験。プレイヤー同士が支え合い、共に成長することで真の達成感を得られる新しいゲームデザインを実現します。",
-    status: "プロトタイプ",
+    title: "神話ARG",
+    description: "退屈で味気ない現実を壮大な神話とゲーミフィケーションで楽しく美しい自分たちの世界へ変容させます。",
+    status: "開発中",
     category: "ゲーム",
     icon: Gamepad,
-    tags: ["協力", "共感", "成長"],
-    gradient: "from-blue-50 to-cyan-50",
-    iconColor: "text-blue-600",
-    badgeColor: "bg-blue-100 text-blue-700",
+    tags: ["現実代替", "神話", "創造"],
+    gradient: "from-green-50 to-teal-50",
+    iconColor: "text-green-600",
+    badgeColor: "bg-green-100 text-green-700",
   },
   {
-    title: "学習×遊び統合システム",
-    description: "教育と娯楽の境界を取り払い、学習そのものが遊びとなる革新的な教育システム。個人の興味と学習スタイルに合わせたパーソナライズド体験を提供します。",
+    title: "神楽塾",
+    description: "教育と娯楽の境界を取り払い、学習そのものが遊びとなる革新的な教育。科学ではなく科楽で、美術ではなく美楽で自分と世界の関わりを豊かにします。",
     status: "企画中",
     category: "教育",
     icon: Star,
@@ -63,37 +63,37 @@ const projectData = [
     badgeColor: "bg-yellow-100 text-yellow-700",
   },
   {
-    title: "音楽による感情共有空間",
-    description: "音楽を通じて人々の感情や体験を共有する仮想空間。リアルタイムで感情に応じた音楽を生成し、離れた場所にいる人々の心をつなげる新しいコミュニケーション手段です。",
-    status: "研究中",
-    category: "音楽",
-    icon: Music,
-    tags: ["感情", "共有", "コミュニケーション"],
-    gradient: "from-green-50 to-teal-50",
-    iconColor: "text-green-600",
-    badgeColor: "bg-green-100 text-green-700",
+    title: "未来の運動会・学園祭・展覧会",
+    description: "一人一人の創造力が生まれ、皆の創造が交わる、地域の新たなお祭りを生み出します。",
+    status: "企画中",
+    category: "運動会",
+    icon: Gamepad,
+    tags: ["協力", "共感", "成長"],
+    gradient: "from-blue-50 to-cyan-50",
+    iconColor: "text-blue-600",
+    badgeColor: "bg-blue-100 text-blue-700",
   },
   {
-    title: "コミュニティ創造プロジェクト",
-    description: "地域住民が協力して物語やゲーム、イベントを創造するプラットフォーム。世代を超えた交流と、地域の文化・歴史を次世代に継承する新しい形のコミュニティ活動を支援します。",
-    status: "実証実験中",
-    category: "コミュニティ",
-    icon: Users,
-    tags: ["地域", "世代間交流", "文化継承"],
+    title: "創造に満ちたまちづくりコレクティブ",
+    description: "AR/デジファブ/音楽などを通じ、自然・技術と交わりながら、私たちで私たちの暮らし・街を創造で彩ります。",
+    status: "コンセプト",
+    category: "社会システム",
+    icon: Heart,
+    tags: ["感謝", "善意", "幸福"],
     gradient: "from-purple-50 to-indigo-50",
     iconColor: "text-purple-600",
     badgeColor: "bg-purple-100 text-purple-700",
   },
   {
-    title: "感謝と喜びの循環システム",
-    description: "日常の小さな親切や喜びを可視化し、感謝の気持ちを社会全体で循環させるシステム。ポジティブな行動がさらなる善意を生み出す、持続可能な幸福社会の実現を目指します。",
+    title: "旅・多拠点居住・AIR",
+    description: "日本各地にある創造拠点を巡り、滞在し、様々な人、文化、創造と出会い、暮らしを楽しみます",
     status: "コンセプト",
     category: "社会システム",
     icon: Heart,
     tags: ["感謝", "善意", "幸福"],
-    gradient: "from-red-50 to-pink-50",
-    iconColor: "text-red-600",
-    badgeColor: "bg-red-100 text-red-700",
+    gradient: "from-purple-50 to-indigo-50",
+    iconColor: "text-purple-600",
+    badgeColor: "bg-purple-100 text-purple-700",
   },
 ]
 
@@ -157,15 +157,15 @@ export default function Play() {
               </span>
               を
               <br />
-              変える
+              生み出す
             </motion.h1>
             <motion.p
               variants={itemVariants}
               className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto"
             >
-              創造性と喜びを原動力とした社会変革。
+              創造性と喜びを原動力とした世界の創造。
               <br className="hidden md:block" />
-              遊びの力で人々の可能性を解放し、より豊かな世界を共に創造します。
+              遊びの力で人々の可能性を解放し、より豊かな社会を共に創造します。
             </motion.p>
             <motion.div
               variants={itemVariants}
@@ -317,7 +317,7 @@ export default function Play() {
         </div>
       </section>
 
-      {/* Impact Section */}
+      {/* Impact Section
       <section className="py-20 bg-gradient-to-r from-blue-50 via-white to-purple-50">
         <div className="container mx-auto px-4">
           <motion.div
@@ -374,7 +374,7 @@ export default function Play() {
             </motion.div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-r from-purple-100 via-white to-blue-100">
