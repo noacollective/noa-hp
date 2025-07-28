@@ -45,28 +45,29 @@ export default function Home() {
           >
             <motion.h1
               variants={itemVariants}
-              className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900"
+              className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900 leading-tight"
             >
-              <span className="whitespace-nowrap">
-              遊び戯れることで
-            
-                <span className="bg-gradient-to-r from-slate-900 via-blue-800 to-blue-600 bg-clip-text text-transparent">
-                人と人工物と自然
-                </span>
-              の
+              <span className="block mb-2">
+                遊び戯れ、
               </span>
-              <br />
-              共生社会を創造する
-              <br />
-              <span className="mt-2 text-base md:text-lg lg:text-xl text-slate-500 italic tracking-wide">
-    　　　　　　  computation for conviviality of all livings
-  　　　　　　　</span>
+              <span className="block mb-2">
+                <span className="bg-gradient-to-r from-slate-900 via-blue-800 to-blue-600 bg-clip-text text-transparent">
+                  人と人工物と自然
+                </span>
+                の
+              </span>
+              <span className="block mb-6">
+                共生社会を創造する
+              </span>
+              <span className="block text-base md:text-lg lg:text-xl text-slate-500 italic tracking-wide font-normal">
+                computation for conviviality of all livings
+              </span>
             </motion.h1>
             <motion.p
               variants={itemVariants}
               className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto"
             >
-              工楽、美楽、科楽、体楽、遊びを通じた世界の探究と
+              工楽、美楽、科楽、体楽の探究と遊び、美術、物語、ゲームのメディア表現
               <br className="hidden md:block" />
               計算技術との戯れから万物の歓びと価値の循環を描く
             </motion.p>
