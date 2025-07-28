@@ -48,15 +48,15 @@ export default function Home() {
               className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900"
             >
               <span className="whitespace-nowrap">
-              生きとし生ける
+              遊び戯れることで
             
                 <span className="bg-gradient-to-r from-slate-900 via-blue-800 to-blue-600 bg-clip-text text-transparent">
-                わたしたち
+                人と人工物と自然
                 </span>
               の
               </span>
               <br />
-              命のテクノロジー
+              共生社会を創造する
               <br />
               <span className="mt-2 text-base md:text-lg lg:text-xl text-slate-500 italic tracking-wide">
     　　　　　　  computation for conviviality of all livings
@@ -66,9 +66,9 @@ export default function Home() {
               variants={itemVariants}
               className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto"
             >
-              人間・テクノロジー・自然の輝く共生を目指し、
+              工楽、美楽、科楽、体楽、遊びを通じた世界の探究と
               <br className="hidden md:block" />
-              遊び・経済・計算技術の連環から新たな進化を探求します
+              計算技術との戯れから万物の歓びと価値の循環を描く
             </motion.p>
             <motion.div
               variants={itemVariants}

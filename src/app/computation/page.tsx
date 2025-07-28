@@ -156,15 +156,15 @@ export default function Computation() {
             >
               <div className="flex items-center gap-2">
                 <Brain className="h-5 w-5 text-purple-500" />
-                <span className="text-sm font-medium text-slate-700">人間中心設計</span>
+                <span className="text-sm font-medium text-slate-700">対立から調和へ</span>
               </div>
               <div className="flex items-center gap-2">
                 <Eye className="h-5 w-5 text-blue-500" />
-                <span className="text-sm font-medium text-slate-700">透明性重視</span>
+                <span className="text-sm font-medium text-slate-700">論理から全体性へ</span>
               </div>
               <div className="flex items-center gap-2">
                 <Shield className="h-5 w-5 text-green-500" />
-                <span className="text-sm font-medium text-slate-700">倫理的配慮</span>
+                <span className="text-sm font-medium text-slate-700">生命と美の計算</span>
               </div>
             </motion.div>
           </motion.div>
@@ -183,37 +183,38 @@ export default function Computation() {
           >
             <motion.div variants={itemVariants} className="text-center space-y-6">
               <h2 className="text-3xl md:text-4xl font-light text-slate-900">
-                人間とAIの協調原理
+                計算技術と生態系の協調原理
               </h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                AIは人間を置き換えるのではなく、人間の能力を拡張し、
-                共に学び成長するパートナーとして位置づけられます。
+                孤立から共在へ、競争から調和へ、拡張から繁栄へ
+                <br />
+                生成変化する世界、その原理となる計算への技術と倫理
               </p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
-                  title: "協調の設計",
-                  description: "AIと人間が対等なパートナーとして協力",
+                  title: "物質性への意識",
+                  description: "情報は、あるいは情報メディアは、共生のための形を持っているだろうか",
                   icon: "🤝",
                   color: "from-blue-50 to-blue-100"
                 },
                 {
-                  title: "透明の実現",
-                  description: "すべての判断プロセスが理解可能",
+                  title: "境界を超える異種混交",
+                  description: "有機物/無機物、生命と機械、異なるものが分断対立するのでなく混ざるデザイン",
                   icon: "🔍",
                   color: "from-purple-50 to-purple-100"
                 },
                 {
-                  title: "倫理の重視",
+                  title: "美と情動のコンピュテーション",
                   description: "人権と尊厳を最優先とした技術開発",
                   icon: "⚖️",
                   color: "from-green-50 to-green-100"
                 },
                 {
-                  title: "持続の配慮",
-                  description: "環境負荷を考慮した計算技術",
+                  title: "計算のpluralism",
+                  description: "ノイマン型計算機に収まらない計算の探究",
                   icon: "🌱",
                   color: "from-yellow-50 to-yellow-100"
                 },
