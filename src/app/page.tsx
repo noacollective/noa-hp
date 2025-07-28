@@ -67,7 +67,9 @@ export default function Home() {
               variants={itemVariants}
               className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto"
             >
-              工楽、美楽、科楽、体楽の探究と遊び、美術、物語、ゲームのメディア表現
+              工楽、美楽、科楽、体楽の探究と
+              <br className="hidden md:block" />
+              遊び、美術、物語、ゲームのメディア表現
               <br className="hidden md:block" />
               計算技術との戯れから万物の歓びと価値の循環を描く
             </motion.p>
