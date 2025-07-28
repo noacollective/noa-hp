@@ -48,7 +48,7 @@ export default function Home() {
               className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900 leading-tight"
             >
               <span className="block mb-2">
-                遊び戯れ、
+                遊び戯れ
               </span>
               <span className="block mb-2">
                 <span className="bg-gradient-to-r from-slate-900 via-blue-800 to-blue-600 bg-clip-text text-transparent">
